@@ -12,7 +12,7 @@ function initMap() {
         .then(response => response.json())
         .then(data => {
             locations = data;
-            addMarkers('Asian'); // Default filter
+            addMarkers('All'); // Show all locations by default
         })
         .catch(error => console.error('Error fetching locations:', error));
 
