@@ -31,7 +31,7 @@ function addMarkers(type) {
 
     // Add new markers based on filter
     locations.forEach(location => {
-        if (type === 'All' || location.type === type) {
+        if (type === 'All' || location["Type in AMEX Website"] === type) {
             const marker = new google.maps.Marker({
                 position: location.geometry.location,
                 map: map,
