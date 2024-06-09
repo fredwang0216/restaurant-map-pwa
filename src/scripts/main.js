@@ -1,4 +1,3 @@
-// Load Google Maps
 function initMap() {
     const map = new google.maps.Map(document.getElementById("map"), {
         zoom: 12,
@@ -23,7 +22,8 @@ function initMap() {
                     infowindow.open(map, marker);
                 });
             });
-        });
+        })
+        .catch(error => console.error('Error fetching locations:', error));
 }
 
 // Register service worker
