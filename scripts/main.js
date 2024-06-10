@@ -20,6 +20,7 @@ function initMap() {
         btn.addEventListener('click', () => {
             const type = btn.getAttribute('data-type');
             addMarkers(type);
+            setActiveButton(btn);
         });
     });
 }
@@ -49,6 +50,13 @@ function addMarkers(type) {
             markers.push(marker);
         }
     });
+}
+
+function setActiveButton(activeButton) {
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+        btn.classList.remove('active');
+    });
+    activeButton.classList.add('active');
 }
 
 // Register service worker
