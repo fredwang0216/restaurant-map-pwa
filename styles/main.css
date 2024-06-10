@@ -6,11 +6,11 @@ body, html {
     display: flex;
     flex-direction: column;
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: white; /* Set background color to white */
 }
 
 .header {
-    background-color: white;
+    background-color: white; /* Match the header background color */
     padding: 10px 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
